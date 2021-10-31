@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks, colorlinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\hypersetup{%
+  colorlinks=true,% hyperlinks will be coloured
+  linkcolor=blue,% hyperlink text will be green
+  linkbordercolor=blue,% hyperlink border will be red
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Abir Pal} \\ \vspace{1pt}
+    \href{mailto:abir.pal899@gmail.com}{\underline{abir.pal899@gmail.com}} $|$ 
+    \href{https://twitter.com/imabptweets}{\underline{@imabptweets}} $|$ 
+    \href{https://linkedin.com/in/imabp}{\underline{linkedin.com/in/imabp}} $|$
+    \href{https://github.com/imabp}{\underline{Github @imabp}}
+    
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \resumeSubheading
+      {Affinidi by Temasek}{Singapore}
+      {Software Engineering Intern}{August 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Create and engineer developer adoption projects and generate 80\% adoptions on Affinidi APIs and SDKs. }
+        \resumeItem{Research on system design and develop the Affinidi Developer Portal to production, serving over 100,000 of developers.}
+        \resumeItem{Improve the existing coupled Authentication to decoupled Authentication for the internal PoCs and projects, which results in increased code re-usability and optimize bundle by removing 10,000 Lines of Code(LOC). }
+        
+    
+      \resumeItemListEnd
+    \resumeSubheading
+      {Major League Hacking}{Remote}
+      {Engineering Fellow}{January 2021 -- April 2021}
+      \resumeItemListStart
+        \resumeItem{Developed the CryptoDrive using Web3, Solidity and React, gained 100 of users in first release.}
+        \resumeItem{Researched on decentralized networks and developed a decentralized file storage service. }
+        \resumeItem{Awarded as Fellow from Major League Hacking(150 Fellows from 40,000) Received winning prize for CryptoDrive as a global winner.}
+       
+     \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://www.cryptodrive.tech/}{CryptoDrive: Decentralized File storing and sharing service}}{[ ReactJS, Node, IPFS, Solidity,]}}{March 2021}
+          \resumeItemListStart
+           \resumeItem{\textbf{Problem:} A Decentralized File Sharing and Storage Service for developers to share environment variables and secrets.}
+           \resumeItem{\textbf{Solution:} Built CryptoDrive under data ethics theme. Written smart contracts using Solidity, Web3, React and implemented Lossless Data Compression Algorithms to optimize Client Side Encryption Process and deployed on Rinkeby TestNET}
+           \resumeItem{Generated 80\% developer adoptions at \href{https://twitter.com/getcryptodrive}{@getCryptoDrive}.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+     \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://imabp.github.io/WebTerminal/}{Simulated Linux on browser.}}{[React, Data Structures]}}{December 2020}
+          \resumeItemListStart
+            \resumeItem{\textbf{Problem:} Quick no-setup simulated browser based Linux Shell, to make beginners aware in the university.}
+            \resumeItem{\textbf{Solution:}Used to empower 5000+ beginners to get started with Linux Commands, via Web Terminal, a simulated terminal on browser. Developed core file service system using Tree Data Structure}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/imabp/CertiGen}{\textbf{CertiGen(Mentored under Ronak Shakuja, SWE Microsoft)}}}{ [NodeJS, JIMP and Postman]}}{October 2020}
+          \resumeItemListStart
+            \resumeItem{\textbf{Problem:} Issuing Developer Event Certificates for Microsoft Student Ambassador's Community}
+            \resumeItem{\textbf{Solution:}A devtool for Microsoft Student Ambassadors, to generate certificates in seconds using Postman.  }
+            \resumeItem{Actively used by 1000+ Student Ambassadors, for their events and quick certificate generations. }
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages(Proficient)}{: Typescript, Java, , HTML/CSS} \\
+      \textbf{Languages(Familiar)}{: Terraform, Go, Python, Solidity } \\
+     \textbf{Frameworks(Proficient)}{: TypeORM, NextJS, PostgreSQL, SQL, gRPC, React, Node.js, NestJS,, AWS Cognito, Jenikins, Dataflow  } \\
+     \textbf{Developer Tools(Proficient)}{: Terraform, AWS(Lambda, Cognito, SES, Route53, Elastic) , Docker, AsyncAPI, OpenAPI, Postman, Google Cloud(VPCs, Load Balancer, BigQuery, Deployment and Monitoring) } \\
+     \textbf{Libraries}{: BabelJS, Kubernetes K9S, React-Router, TypeORM, Newman, Material UI, Tailwind  }
+    }}
+ \end{itemize}
+
+\section{Awards and Volunteer Experience }
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \resumeItemListStart
+                \resumeItem{\textbf{\href{https://dsailtconference.org/schedule/}{Guest Speaker at Carnegie Mellon University, UC Berkeley and Georgia Tech}}: Presented by first international talk on API Designs and how one can securely serve their machine learning models.}
+                \resumeItem{\textbf{\href{https://apihacks.co}{API Hacks Organizer} }: Organizer of API Hacks with support of Postman to help 2000+ developers to build developer tools, productivity tools using APIs and nurture open source culture among them.}
+                \resumeItem{\textbf{\href{https://devpost.com/software/cryptodrive}{Global Hackathon Winner at MLH Fellowship for CryptoDrive}}}
+                \resumeItem{\textbf{Other Auspicious Titles Awarded:} \href{https://www.youtube.com/watch?v=-P_IGKuYmeY}{Official Postman Conference Speaker(Featured on Postman Youtube)},  \href{https://twitter.com/SawoLabs/status/1418869910332055552}{Most Valuable Professional(MVP) at SAWO Labs}, \href{https://studentambassadors.microsoft.com/en-US/profile/49532}{Gold Microsoft Student Ambassador}(200 Golds Globally) .}
+      \resumeItemListEnd
+    }}
+ \end{itemize}
+ 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Chandigarh University}{Mohali, Punjab}
+      {Senior,B.E in Computer Science and Engineering}{August 2018 -- Expected July. 2022}
+  \resumeSubHeadingListEnd
+\end{document}
