@@ -141,7 +141,7 @@
       {Tyup}{Remote}
       {Lead Back-end Engineer}{June 2021 -- Present}
       \resumeItemListStart
-        \resumeItem{Developerd whole back-end system from scratch. Token based authentication(JWT), feed based on institution visibility, email OTP system using redis, Reset and forgot password, Protection against vulnerabilities like XSS, HPP and IDOR.}
+        \resumeItem{Developed whole back-end system from scratch. Token based authentication(JWT), feed based on institution visibility, email OTP system using redis, Reset and forgot password, Protection against vulnerabilities like XSS, HPP and IDOR.}
         \resumeItem{Integrated nginx as reverse proxy }
         \resumeItem{Dockerized the whole application using docker-compose}
         \resumeItem{Integrated AWS S3 with in-server authentication to prevent unauthorised access to tyup resources.}
@@ -164,12 +164,20 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/souvikinator/lsx}{lsx (ls-Xtended):  A command line utility lets you navigate through terminal like a pro }} {[ Go, Shell ]}}{October 2021}
+          {\textbf{\href{https://github.com/souvikinator/lsx}{lsx (ls-Xtended):  CLI to navigate through terminal with ease }} {[ Go, Shell ]}}{October 2021}
           \resumeItemListStart
            \resumeItem{\textbf{Problem:} It's a pain to cd and ls multiple times to reach desired directory in terminal and makes the whole navigation process slow }
            \resumeItem{\textbf{Solution:} lsx allows smooth navigate and search directories on the go with just one command. Create alias for desired directory. Ranks most visited directories for better accessibility.}
            \resumeItem{ 100+ stars on github with active contribution from users }
           \resumeItemListEnd
+          
+         \resumeProjectHeading
+          {\textbf{\href{https://github.com/souvikinator/gh-retrieve}{gh-retrieve: Download specific directory in a public GitHub repository}} {[ NodeJS ]}}{April 2021}
+          \resumeItemListStart
+           \resumeItem{\textbf{Problem:} Github won't let you clone or download any specific directory or sub-directory in a repo.}
+           \resumeItem{\textbf{Solution:} Nodejs module to download any specific directory or sub-directory in a public GitHub repository. Recursive download, uses github API, doesn't maintain any repo workflow. Sparse download, uses git installed in system, maintains git workflow of the target repository. }
+           \resumeItem{150+ downloads on npm.}
+          \resumeItemListEnd  
           
           \resumeProjectHeading
           {\textbf{\href{https://github.com/souvikinator/gofuzz}{gofuzz: web url fuzzer }} {[ Go ]}}{March 2021}
@@ -179,18 +187,11 @@
            \resumeItem{ 30+ stars on github }
           \resumeItemListEnd
           
-         \resumeProjectHeading
-          {\textbf{\href{https://github.com/souvikinator/synko}{synko: sync config files across devices }} {[ python, shell ]}}{March 2021}
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/souvikinator/web-SS}{web-SS: Screenshots of the websites in bulk}} {[ NodeJS, Express, EJS ]}}{November 2020}
           \resumeItemListStart
-           \resumeItem{\textbf{Problem:} Difficult to sync application settings and config files across multiple multiplatform devices }
-           \resumeItem{\textbf{Solution:} Sync application settings and configuration files across multiple devices (linux and macos). Works with dropbox and other cloud storage. User gets the freedom to add path to the config and setting files. Freedom to sync specific set of files across specific set of devices. }
-          \resumeItemListEnd
-          
-          \resumeProjectHeading
-          {\textbf{\href{https://github.com/souvikinator/unwee}{unwee: URL unshortner }} {[ Go ]}}{December 2020}
-          \resumeItemListStart
-           \resumeItem{\textbf{Problem:} URL shortening services are uses by attackers to redirect user to malicious sites. Automation in Web-scraping and related, short URLs are often encountered but needs to be unshortned with some other online service. }
-           \resumeItem{\textbf{Solution:} Unwee can be used to unshorten URLs knowing before hand where it leads to. Can be used as an addon with other automation tools for bulk unshortning of URLs. Also classifies URLs based on status codes.}
+           \resumeItem{\textbf{Problem:} Takings screenshots of multiple pages of website for showcase purpose is a lot of work to do.}
+           \resumeItem{\textbf{Solution:} web-SS takes multiple URLs as input, generates screenshot in bulk automating the screenshot process. Support for viewport and long screenshot with custom dimentions. }
           \resumeItemListEnd  
           
           \resumeProjectHeading
@@ -200,15 +201,6 @@
            \resumeItem{\textbf{Solution:} eyeson watches file for any changes which triggers some command provided by user. Can watch multiple files. Works with glob patterns. }
            \resumeItem{ used by 100+ downloads on npm }
           \resumeItemListEnd
-        
-        \newpage
-        
-          \resumeProjectHeading
-          {\textbf{\href{https://github.com/souvikinator/web-SS}{web-SS: Screenshots of the websites in bulk}} {[ NodeJS, Express, EJS ]}}{November 2020}
-          \resumeItemListStart
-           \resumeItem{\textbf{Problem:} Takings screenshots of multiple pages of website for showcase purpose is a lot of work to do.}
-           \resumeItem{\textbf{Solution:} web-SS takes multiple URLs as input, generates screenshot in bulk automating the screenshot process. Support for viewport and long screenshot with custom dimentions. }
-          \resumeItemListEnd  
          
          \resumeProjectHeading
           {\textbf{\href{https://github.com/souvikinator/asker}{asker: A collection of interactive command line user interfaces for C++}} {[ C++, Makefile ]}}{September 2021}
@@ -216,14 +208,7 @@
            \resumeItem{\textbf{Problem:} Inspired by \href{https://www.npmjs.com/package/inquirer}{inquirer}, no such library for C++}
            \resumeItem{\textbf{Solution:} Asker provides command line interface like confirm prompt, dropdown, multi-select dropdown, password input, masked input, normal input with and without validation. }
           \resumeItemListEnd  
-          
-          \resumeProjectHeading
-          {\textbf{\href{https://github.com/souvikinator/gh-retrieve}{gh-retrieve: Download specific directory or sub-directory in a public GitHub repository}} {[ NodeJS ]}}{April 2021}
-          \resumeItemListStart
-           \resumeItem{\textbf{Problem:} Github won't let you clone or download any specific directory or sub-directory in a repo.}
-           \resumeItem{\textbf{Solution:} Nodejs module to download any specific directory or sub-directory in a public GitHub repository. Recursive download, uses github API, doesn't maintain any repo workflow. Sparse download, uses git installed in system, maintains git workflow of the target repository. }
-           \resumeItem{150+ downloads on npm.}
-          \resumeItemListEnd  
+
     \resumeSubHeadingListEnd
 
 %
@@ -231,7 +216,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages(Proficient)}{: JavaScript, C++, Go, Bash, Python } \\
+     \textbf{Languages}{: JavaScript, C++, Go, Bash, Python } \\
       \textbf{Languages(Familiar)}{: TypeScript, C, Rust } \\
       \textbf{DB}{: PostgeSQL, SQL, MongoDB, Redis } \\
      \textbf{Frameworks}{: NextJS, gRPC, React, Svelte, Echo, Gin  } \\
