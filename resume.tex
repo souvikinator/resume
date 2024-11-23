@@ -13,7 +13,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks,colorlinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -53,12 +53,21 @@
     {#1 \vspace{-2pt}}
   }
 }
+
 \hypersetup{%
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=blue,      
+    colorlinks=false,
+    linkcolor=black,
+    filecolor=black,      
     citecolor=black,      
-    urlcolor=teal,
+    urlcolor=black,
+    pdfborder={0 0 0},
+}
+
+% New command for links with underline and new tab
+\newcommand{\resumeLink}[2]{%
+  \href{#1}{\underline{#2}}%
+  \hspace{2pt}%
+  \href{#1}{\raisebox{0.5pt}{\tiny\faExternalLink}}%
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -91,10 +100,9 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Souvik Kar Mahapatra} \\ \vspace{1pt}
-    \href{mailto:souvikat001@gmail.com}{\underline{souvikat001@gmail.com}} $|$ 
-    % \href{https://twitter.com/souvikinator}{\underline{@souvikinator}} $|$ 
-    \href{https://linkedin.com/in/souvik-kar-mahapatra}{\underline{linkedin.com/in/souvik-kar-mahapatra}} $|$
-    \href{https://github.com/souvikinator}{\underline{github.com/souvikinator}}    
+    \resumeLink{mailto:souvikat001@gmail.com}{souvikat001@gmail.com} $|$ 
+    \resumeLink{https://linkedin.com/in/souvik-kar-mahapatra}{linkedin.com/in/souvik-kar-mahapatra} $|$
+    \resumeLink{https://github.com/souvikinator}{github.com/souvikinator}    
 \end{center}
 
 %-----------EXPERIENCE-----------
@@ -105,7 +113,7 @@
 {Zero}{Bengaluru}
 {Co-Founder \& CTO}{Jun 2024 -- Nov 2024}
 \resumeItemListStart
-\resumeItem{Built {\textbf{\href{https://seoautolink.com}{SEOAutoLink.com}}}, automating discovery and insertion of SEO-friendly links to boost client rankings by \textbf{25\%}.}
+\resumeItem{Built {\resumeLink{https://seoautolink.com}{SEOAutoLink.com}}, automating discovery and insertion of SEO-friendly links to boost client rankings by \textbf{25\%}.}
 \resumeItem{Optimized script performance and load time by \textbf{40\%} while preserving SEO metrics.}
 \resumeItem{Leveraged user behavior analysis to drive product iterations, increasing conversions by \textbf{30\%}.}
 \resumeItem{Created scalable content processing pipeline to handle \textbf{3K-5K} posts with 99\% uptime and \textbf{2-3s} processing time per post.}
@@ -136,7 +144,7 @@
 {Digital Product School}{Remote}
 {Software Engineer}{Sept 2022 -- Mar 2023}
 \resumeItemListStart
-\resumeItem{Engineered data platform for \href{Pfaff Werkzeug}{\underline{pfaff-mold.de}} to automate collection and analysis of industrial machine data, reducing manual work and support cost by ~70\%.}
+\resumeItem{Engineered data platform for \resumeLink{https://pfaff-mold.de}{pfaff-mold.de} to automate collection and analysis of industrial machine data, reducing manual work and support cost by ~70\%.}
 \resumeItem{Built time series data pipeline processing \textbf{1K+ sensor readings/s} with \textbf{MQTT} and \textbf{Cassandra}.}
 \resumeItem{Created real-time multi-role monitoring dashboard in \textbf{React}, enabling 80\% faster data analysis and proactive maintenance.}
 \resumeItemListEnd
@@ -147,14 +155,14 @@
 \resumeSubHeadingListStart
               
 \resumeProjectHeading
-{\textbf{\href{https://github.com/souvikinator/notion-to-md}{notion-to-md}} {[ Typescript, NodeJS ]}}{Dec 2021 -- Present}
+{\textbf{\resumeLink{https://github.com/souvikinator/notion-to-md}{notion-to-md}} {[ Typescript, NodeJS ]}}{Dec 2021 -- Present}
 \resumeItemListStart
 \resumeItem{Plugin-based \textbf{NodeJS} module for converting Notion to markdown with 100\% test coverage.}
 \resumeItem{Achieved \textbf{40K+} weekly NPM downloads, \textbf{1.1K+} stars, merged \textbf{30+} PRs on GitHub, actively maintaining.}
 \resumeItemListEnd
 
 \resumeProjectHeading  
-{\textbf{\href{https://github.com/souvikinator/lsx}{lsx (ls-Xtended)}} {[ Go, Shell ]}}{Oct 2021}
+{\textbf{\resumeLink{https://github.com/souvikinator/lsx}{lsx (ls-Xtended)}} {[ Go, Shell ]}}{Oct 2021}
 \resumeItemListStart
 \resumeItem{Terminal navigation tool in \textbf{Go} with directory aliasing and smart ranking, reducing navigation time by 70\%.}
 \resumeItem{Garnered \textbf{170+} stars on GitHub.}
@@ -172,7 +180,7 @@
     }}
 \end{itemize}
 
-%-----------EDUCATION-----------
+%-----------EDUCATION-----------  
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
@@ -180,186 +188,4 @@
 {B.Tech in Information Technology, \textbf{8.2 CGPA}}{2020 -- 2024}
 \resumeSubHeadingListEnd
 
-\end{document}%-------------------------
-% Resume in Latex
-% Author : Souvik Kar Mahapatra
-% License: MIT  
-%------------------------
-￼
-\documentclass[letterpaper,11pt]{article}
-￼
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks,colorlinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage{xcolor}
-\usepackage{charter}
-￼
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-￼
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-￼
-\urlstyle{same}
-￼
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-￼
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-￼
-\pdfgentounicode=1
-￼
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-\hypersetup{%
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=blue,      
-    citecolor=black,      
-    urlcolor=teal,
-}
-￼
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
-}
-￼
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-￼
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-￼
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-￼
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-￼
-\begin{document}
-￼
-%----------HEADING----------
-\begin{center}
-    \textbf{\Huge \scshape Souvik Kar Mahapatra} \\ \vspace{1pt}
-    \href{mailto:souvikat001@gmail.com}{\underline{souvikat001@gmail.com}} $|$ 
-    \href{https://twitter.com/souvikinator}{\underline{@souvikinator}} $|$ 
-    \href{https://linkedin.com/in/souvik-kar-mahapatra}{\underline{linkedin.com/in/souvik-kar-mahapatra}} $|$
-    \href{https://github.com/souvikinator}{\underline{github.com/souvikinator}}    
-\end{center}
-￼
-%-----------EXPERIENCE-----------
-\section{Experience}
-\resumeSubHeadingListStart
-￼
-\resumeSubheading
-{Zero}{Bengaluru}
-{Co-Founder \& CTO}{Jun 2024 -- Nov 2024}
-\resumeItemListStart
-\resumeItem{Built {\textbf{\href{https://seoautolink.com}{SEOAutoLink.com}}}, automating discovery and insertion of SEO-friendly links to boost client rankings by \textbf{25\%}.}
-\resumeItem{Optimized script performance and load time by \textbf{40\%} while preserving SEO metrics.}
-\resumeItem{Leveraged user behavior analysis to drive product iterations, increasing conversions by \textbf{30\%}.}
-\resumeItem{Created scalable content processing pipeline to handle \textbf{3K-5K} posts with 99\% uptime and \textbf{2-3s} processing time per post.}
-\resumeItem{Implemented keyword matching using \textbf{NLP} and \textbf{RAG}, achieving \textbf{85\%} contextual link match accuracy \textbf{across languages}.}
-\resumeItemListEnd
-￼
-\resumeSubheading
-{GoComet}{Bengaluru}
-{Backend Developer Intern}{Feb 2024 -- Aug 2024}
-\resumeItemListStart
-\resumeItem{Identified and refactored tech debt in detention and demurrage module to resolve edge cases and implement combined fee calculations.}
-\resumeItem{Accelerated SQL queries by \textbf{20-30\%} through query plan optimization and \textbf{New Relic}.}
-\resumeItem{Automated data transfer and file parsing with \textbf{Python} and \textbf{Shell}, reducing manual work by 70\%.}
-\resumeItem{Enhanced \textbf{Slack} support workflow to track team responsibilities, increasing transparency.}
-\resumeItemListEnd
-￼
-\resumeSubheading
-{OpenInApp/Listed}{Bangalore}
-{Backend Developer}{Jul 2023 -- Jan 2024}
-\resumeItemListStart
-\resumeItem{Architected calendar booking system for influencers supporting concurrent, conflict-free bookings.}
-\resumeItem{Engineered \textbf{Shopify} in-app browser redirection and attribution, boosting conversions \textbf{11x} with \textbf{90-95\%} accuracy.}
-\resumeItem{Built image-based product discovery platform processing \textbf{10K+} daily searches using \textbf{RabbitMQ} and pub-sub, reducing request failures by 75\%.}
-\resumeItem{Led \textbf{Docker} adoption and database migrations methods, cutting deployment time and manual work by 60\%.}
-\resumeItemListEnd
-￼
-\resumeSubheading
-{Digital Product School}{Remote}
-{Software Engineer}{Sept 2022 -- Mar 2023}
-\resumeItemListStart
-\resumeItem{Engineered data platform for \href{Pfaff Werkzeug}{\underline{pfaff-mold.de}} to automate collection and analysis of industrial machine data, reducing manual work and support cost by ~70\%.}
-\resumeItem{Built time series data pipeline processing \textbf{1K+ sensor readings/s} with \textbf{MQTT} and \textbf{Cassandra}.}
-\resumeItem{Created real-time multi-role monitoring dashboard in \textbf{React}, enabling 80\% faster data analysis and proactive maintenance.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-￼
-%-----------PROJECTS-----------
-\section{Projects}
-\resumeSubHeadingListStart
-              
-\resumeProjectHeading
-{\textbf{\href{https://github.com/souvikinator/notion-to-md}{notion-to-md}} {[ Typescript, NodeJS ]}}{Dec 2021 -- Present}
-\resumeItemListStart
-\resumeItem{Plugin-based \textbf{NodeJS} module for converting Notion to markdown with 100\% test coverage.}
-\resumeItem{Achieved \textbf{40K+} weekly NPM downloads, \textbf{1.1K+} stars, merged \textbf{30+} PRs on GitHub.}
-\resumeItemListEnd
-￼
-\resumeProjectHeading  
-{\textbf{\href{https://github.com/souvikinator/lsx}{lsx (ls-Xtended)}} {[ Go, Shell ]}}{Oct 2021}
-\resumeItemListStart
-\resumeItem{Terminal navigation tool in \textbf{Go} with directory aliasing and smart ranking, reducing navigation time by 70\%.}
-\resumeItem{Garnered \textbf{170+} stars on GitHub.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-￼
-%-----------SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-        \textbf{Languages}{: JavaScript, TypeScript, Go, Python, Shell, C++, C} \\
-        \textbf{Databases}{: PostgreSQL, MongoDB, Redis, Cassandra} \\
-        \textbf{Frameworks/Libraries}{: Node.js, React, Next.js, Express} \\  
-        \textbf{Tools/Platforms}{: AWS, Docker, Nginx, RabbitMQ, GitHub Actions}
-    }}
-\end{itemize}
-￼
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Kalinga Institute of Industrial Technology}{Bhubaneshwar, Odissa}
-{B.Tech in Information Technology, 8.2 CGPA}{2020 -- 2024}
-\resumeSubHeadingListEnd
-￼
 \end{document}
